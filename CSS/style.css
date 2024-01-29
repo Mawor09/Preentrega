@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    box-sizing: border-box;
+    }
+
+body{
+    background-image: url("../IMG/background.png");
+}
+
+.container{
+    display:grid;
+    grid-template-areas: 
+    "header aside"
+    "content content"
+    "footer footer"
+    
+    
+    ;
+}
+
+.container header{
+    grid-area: header;
+    background-color: gray;
+}
+.container main{
+    grid-area: content;
+    
+}
+
+.container aside{
+    grid-area: aside;
+    background-color: gray;
+}
+
+.container footer{
+    grid-area: footer;
+    background-color: gray;
+}
+
+.favicon{
+    height: 60px;
+    width: 60px;
+}
+
+.menu li:hover{
+    background-color: rgb(220, 78, 168);
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 2px;
+    
+}
+
+.peq{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.mediana{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-footer{
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tips{
+    height: 100px;
+    width: 100px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.link-color{
+    color:aqua;
+    text-decoration: none;
+}
+
+ol{
+    padding-top: 10px;
+    font-size: large;
+    font-weight: 900;
+    margin-left: 20%;
+}
+
+.lista{
+    font-style: oblique;
+    font-size: large;
+    margin-left: 30%;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+h4{
+    text-align: center;
+}
+
+.imagen-texto{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin: 5px;
+}
+
+
+    @media screen and (min-width:1024px){
+        .container{
+            display:grid;
+            grid-template-areas: 
+            "header header header aside"
+            "content content content content"
+            "footer footer footer footer";
+            
+            ;
+        }
+        
+        .container header{
+            grid-area: header;
+            background-color: gray;
+        }
+        .container main{
+            grid-area: content;
+            
+        }
+        
+        .container aside{
+            grid-area: aside;
+            background-color: gray;
+        }
+        
+        .container footer{
+            grid-area: footer;
+            background-color: gray;
+        }
+
+        .menu li{
+            background-color: rgb(220, 78, 168);
+            display: inline-block;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 50px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            padding: 3px;
+        }
+        
+}
