@@ -1,0 +1,128 @@
+//header
+.menu li{
+    background-color: $color-menu;
+    display: inline-block;
+    color: $color-menu-letters;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 2px;
+    }
+
+    .favicon{
+        height: 60px;
+        width: 60px;
+    }
+//main
+h4{
+    text-align: center;
+}
+
+.imagen-texto{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin: 5px;
+}
+//estilos media query tablet
+@media screen and (max-width:1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: medium;
+    }
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "asideheader header "
+        "content content content"
+        "footer footer footer";
+        
+        
+    }
+    
+    .container header{
+        grid-area: header;
+        background-color: transparent;
+    }
+    .container main{
+        grid-area: content;
+        
+    }
+    
+    .container aside{
+        grid-area: aside;
+        background-color: transparent;
+        
+    }
+
+    .container footer{
+        grid-area: footer;
+        background-color: $color-footer;
+    }
+
+    .menu li{
+        background-color: $color-menu;
+        display: inline-block;
+        color: $color-menu-letters;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: 3px;
+        font-size: small;
+    }
+
+}
+
+//estilos media query tel
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: small;
+    }
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "aside header"
+        "content content"
+        "footer footer";
+        
+        
+    }
+    
+    .container header{
+        grid-area: header;
+        background-color: transparent;
+    }
+    .container main{
+        grid-area: content;
+        
+    }
+    
+    .container aside{
+        grid-area: aside;
+        background-color: transparent;
+        
+    }
+
+    .container footer{
+        grid-area: footer;
+        background-color: $color-footer;
+    }
+
+    .menu li{
+        background-color: $color-menu;
+        display: inline-block;
+        color: $color-menu-letters;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: 3px;
+        font-size: small;
+    }
+
+
+}

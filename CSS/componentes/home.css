@@ -1,0 +1,104 @@
+.menu li {
+  background-color: rgb(220, 78, 168);
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.favicon {
+  height: 60px;
+  width: 60px;
+}
+
+ol {
+  padding-top: 10px;
+  font-size: large;
+  font-weight: 900;
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+  }
+  .container {
+    display: grid;
+    grid-template-areas: "header header aside" "content content content" "footer footer footer";
+  }
+  .container header {
+    grid-area: header;
+    background-color: transparent;
+  }
+  .container main {
+    grid-area: content;
+  }
+  .container aside {
+    grid-area: aside;
+    background-color: transparent;
+  }
+  .container footer {
+    grid-area: footer;
+    background-color: gray;
+  }
+  .menu li {
+    background-color: rgb(220, 78, 168);
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 3px;
+  }
+  .mediana {
+    height: 200px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+  }
+  .container {
+    display: grid;
+    grid-template-areas: "header aside" "content content" "footer footer";
+  }
+  .container header {
+    grid-area: header;
+    background-color: transparent;
+  }
+  .container main {
+    grid-area: content;
+  }
+  .container aside {
+    grid-area: aside;
+    background-color: transparent;
+  }
+  .container footer {
+    grid-area: footer;
+    background-color: gray;
+  }
+  .menu li {
+    background-color: rgb(220, 78, 168);
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 3px;
+  }
+  .mediana {
+    height: 200px;
+    width: 400px;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

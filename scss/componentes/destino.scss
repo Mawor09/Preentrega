@@ -1,0 +1,121 @@
+.video{
+    margin-left: 30%;
+}
+//media query tablet
+@media screen and (max-width:1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: small;
+    }
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "aside header header"
+        "content content content"
+        "footer footer footer";
+        
+        
+    }
+    
+    .container header{
+        grid-area: header;
+        background-color: transparent;
+    }
+    .container main{
+        grid-area: content;
+        
+    }
+    
+    .container aside{
+        grid-area: aside;
+        background-color: transparent;
+        
+    }
+
+    .container footer{
+        grid-area: footer;
+        background-color: $color-footer;
+    }
+
+    .menu li{
+        background-color: $color-menu;
+        display: inline-block;
+        color: $color-menu-letters;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: 3px;
+        font-size: small;
+
+    }
+    .video{
+        margin-left: 10%;
+        width: 400px;
+        height: 300px;
+    }
+    .mediana{
+        height: 300px;
+        width: 400px;
+    }
+}
+//media query tel
+@media screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: small;
+    }
+    .container{
+        display:grid;
+        grid-template-areas: 
+        "aside header"
+        "content content"
+        "footer footer";
+        
+        
+    }
+    
+    .container header{
+        grid-area: header;
+        background-color: transparent;
+    }
+    .container main{
+        grid-area: content;
+        
+    }
+    
+    .container aside{
+        grid-area: aside;
+        background-color: transparent;
+        
+    }
+
+    .container footer{
+        grid-area: footer;
+        background-color: $color-footer;
+    }
+
+    .menu li{
+        background-color: $color-menu;
+        display: inline-block;
+        color: $color-menu-letters;
+        text-transform: uppercase;
+        border-radius: 50px;
+        margin-top: 10px;
+        box-sizing: border-box;
+        padding: 3px;
+        
+
+    }
+    .video{
+        margin-left: 5%;
+        width: 400px;
+        height: 300px;
+    }
+    .mediana{
+        height: 200px;
+        width: 400px;
+    }
+}
