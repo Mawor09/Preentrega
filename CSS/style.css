@@ -176,7 +176,6 @@ ol {
   .container footer {
     grid-area: footer;
     background-color: gray;
-    margin-top: 50px;
   }
   .menu li {
     background-color: rgb(220, 78, 168);
@@ -537,6 +536,7 @@ body {
 .container footer {
   grid-area: footer;
   background-color: gray;
+  margin-top: 60px;
 }
 
 .peq {
