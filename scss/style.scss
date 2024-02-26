@@ -14,7 +14,7 @@
 
 body {
     background-image: url("../IMG/BG.png");
-    background-size: 250vh;
+    background-size: 240vh;
 }
 
 .container {
@@ -23,11 +23,14 @@ body {
         "aside aside header header"
         "content content content content"
         "footer footer footer footer";
+    grid-template-columns: 1fr 1fr;    
 }
 
 .container header {
     grid-area: header;
-
+    .peq{
+        padding: 0;margin: 0;
+    }
 }
 
 .container main {
@@ -42,7 +45,7 @@ body {
 
 .container footer {
     grid-area: footer;
-    background-color: gray;
+    background-color: $color-footer;
 }
 
 
@@ -103,6 +106,9 @@ li {
     }
 }
 
+p{
+    word-wrap: break-word;
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;

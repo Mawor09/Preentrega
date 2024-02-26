@@ -64,6 +64,7 @@ ol {
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-size: small;
   }
   .container {
@@ -155,6 +156,7 @@ ol {
     margin: 0;
     padding: 0;
     font-size: small;
+    box-sizing: border-box;
   }
   .container {
     display: grid;
@@ -186,7 +188,7 @@ ol {
     padding: 3px;
   }
   .video {
-    margin-left: 5%;
+    margin-left: 2%;
     width: 400px;
     height: 300px;
   }
@@ -219,6 +221,8 @@ h4 {
   justify-content: center;
   align-items: right;
   margin: 5px;
+  border: 5px;
+  border-style: double;
 }
 
 @media screen and (max-width: 1024px) {
@@ -256,6 +260,7 @@ h4 {
     box-sizing: border-box;
     padding: 3px;
     font-size: small;
+    flex-wrap: nowrap;
   }
 }
 @media screen and (max-width: 600px) {
@@ -263,6 +268,7 @@ h4 {
     margin: 0;
     padding: 0;
     font-size: small;
+    box-sizing: border-box;
   }
   .container {
     display: grid;
@@ -356,6 +362,7 @@ h4 {
     margin: 0;
     padding: 0;
     font-size: small;
+    box-sizing: border-box;
   }
   .container {
     display: grid;
@@ -453,6 +460,7 @@ h4 {
     margin: 0;
     padding: 0;
     font-size: small;
+    box-sizing: border-box;
   }
   .container {
     display: grid;
@@ -498,16 +506,21 @@ h4 {
 
 body {
   background-image: url("../IMG/BG.png");
-  background-size: 250vh;
+  background-size: 240vh;
 }
 
 .container {
   display: grid;
   grid-template-areas: "aside aside header header" "content content content content" "footer footer footer footer";
+  grid-template-columns: 1fr 1fr;
 }
 
 .container header {
   grid-area: header;
+}
+.container header .peq {
+  padding: 0;
+  margin: 0;
 }
 
 .container main {
@@ -575,6 +588,10 @@ li {
 }
 li:hover {
   color: pink;
+}
+
+p {
+  word-wrap: break-word;
 }
 
 @keyframes fadeIn {

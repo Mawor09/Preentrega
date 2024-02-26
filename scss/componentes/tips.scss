@@ -23,6 +23,8 @@ h4{
     justify-content: center;
     align-items: right;
     margin: 5px;
+    border: 5px;
+    border-style: double;
 }
 //estilos media query tablet
 @media screen and (max-width:1024px){
@@ -71,6 +73,7 @@ h4{
         box-sizing: border-box;
         padding: 3px;
         font-size: small;
+        flex-wrap: nowrap;
     }
 
 }
@@ -81,6 +84,7 @@ h4{
         margin: 0;
         padding: 0;
         font-size: small;
+        box-sizing: border-box;
     }
     .container{
         display:grid;
