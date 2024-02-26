@@ -176,6 +176,7 @@ ol {
   .container footer {
     grid-area: footer;
     background-color: gray;
+    margin-top: 50px;
   }
   .menu li {
     background-color: rgb(220, 78, 168);
@@ -513,6 +514,7 @@ body {
   display: grid;
   grid-template-areas: "aside aside header header" "content content content content" "footer footer footer footer";
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content max-content;
 }
 
 .container header {

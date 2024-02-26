@@ -84,7 +84,7 @@
     }
     .container main{
         grid-area: content;
-        
+    
     }
     
     .container aside{
@@ -96,6 +96,7 @@
     .container footer{
         grid-area: footer;
         background-color: $color-footer;
+        margin-top: 50px;
     }
 
     .menu li{

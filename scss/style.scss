@@ -23,7 +23,8 @@ body {
         "aside aside header header"
         "content content content content"
         "footer footer footer footer";
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content max-content max-content;    
 }
 
 .container header {
